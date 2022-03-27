@@ -3,3 +3,13 @@
     grid-template-columns: 1fr 70% 1fr;
     grid-template-rows: max-content;
 }
+
+@media screen and (max-width: 1024px) 
+{
+    .grid{
+        display: grid;
+        grid-template-columns: 1fr 90% 1fr;
+        grid-template-rows: max-content;
+    }
+    
+}

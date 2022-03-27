@@ -14,7 +14,6 @@ html, body {
   margin: 0px;
   padding: 0px;
   height: 100%;
-  width: 100%;
 }
 
 .footer {
@@ -201,6 +200,13 @@ html, body {
   grid-template-rows: max-content;
 }
 
+@media screen and (max-width: 1024px) {
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 90% 1fr;
+    grid-template-rows: max-content;
+  }
+}
 .burger {
   width: 22px;
   height: 24px;
@@ -283,7 +289,7 @@ html, body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   gap: 170px;
   grid-row: 2;
