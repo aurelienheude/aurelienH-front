@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aurelienheude.com | Accueil</title>
+
+    <link rel="stylesheet" href="public/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Gari4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="grid">
+    <nav data-aos="zoom-up" data-aos-delay="100" id="menu" class="nav">
+        <svg width="37" height="42" viewBox="0 0 37 42" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <rect y="0.0524902" width="37" height="41.8949" fill="url(#pattern0)"/>
+            <defs>
+            <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+            <use xlink:href="#image0_483_370" transform="translate(-0.000280261) scale(0.00156828 0.00138504)"/>
+            </pattern>
+            <image id="image0_483_370" width="638" height="722" xlink:href="data:image/png;base64,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"/>
+            </defs>
+        </svg>
+
+        <ul>
+            <li><a href="#service">Service <div class="bar"></div></a></li>
+            <li><a href="#project">Portfolio <div class="bar"></div></a></li>
+            <li><a href="#tarif">Tarifs <div class="bar"></div></a></li>
+            <li><a href="#about">A propos <div class="bar"></div></a></li>
+            <li><a href="#contact">Contact <div class="bar"></div></a></li>
+        </ul>
+    </nav>
+
+    <section id="herobanner" class="herobanner">
+        <h1 data-aos="fade-up" data-aos-delay="100">Aurélien Heude <b>Développeur web freelance</b></h1>
+        <a data-aos="fade-up" data-aos-delay="200" href="#contact">me contacter<div class="background"></div></a>
+    </section>
+
+    <section id="service" class="services">
+        <div class="title">
+            <h2 data-aos="fade-up">Services</h2>
+            <p data-aos="fade-up" data-aos-delay="100">Des services personnalisés, <b>adapté à vos besoin</b> !</p>
+        </div>
+        <div class="services__CardGrp">
+            <article data-aos="fade-up" data-aos-delay="100" class="services__CardGrp__card">
+                <div class="services__CardGrp__card-circle">
+                    <svg width="26" height="23" viewBox="0 0 26 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_412_373)">
+                        <path d="M7.7684 1.8039L12.1017 0.168741C12.6795 -0.0490855 13.3205 -0.0490855 13.8983 0.168741L18.2316 1.8039C19.2111 2.1745 19.8611 3.11067 19.8611 4.15601V9.19534C19.9198 9.21331 19.9785 9.23128 20.0372 9.21331L24.3705 10.8889C25.35 11.2573 26 12.1961 26 13.2383V18.593C26 19.5903 25.4087 20.4932 24.4878 20.893L20.1545 22.7887C19.509 23.0762 18.7687 23.0762 18.1233 22.7887L13 20.5516L7.87674 22.7887C7.23125 23.0762 6.49097 23.0762 5.84549 22.7887L1.51035 20.893C0.592674 20.4932 0 19.5903 0 18.593V13.2383C0 12.1961 0.649549 11.2573 1.63177 10.8889L5.96285 9.21331C6.02153 9.23128 6.08021 9.21331 6.13889 9.19534V4.15601C6.13889 3.11067 6.78889 2.1745 7.7684 1.8039ZM13.1264 2.18483C13.0451 2.15384 12.9142 2.15384 12.8736 2.18483L9.33472 3.51946L12.9594 4.91878L16.6653 3.51946L13.1264 2.18483ZM17.6944 9.46038V5.43538L13.975 6.85491V10.8619L17.6944 9.46038ZM6.9875 11.2707C6.90625 11.2393 6.77535 11.2393 6.73472 11.2707L3.19628 12.6049L6.86111 14.002L10.5264 12.6049L6.9875 11.2707ZM7.83611 20.4528L11.5556 18.8266V14.5186L7.83611 15.9381V20.4528ZM15.4736 12.6049L19.1389 14.002L22.8042 12.6049L19.2653 11.2707C19.184 11.2393 19.0531 11.2393 19.0125 11.2707L15.4736 12.6049ZM23.8333 18.593V14.5186L20.1139 15.9381V20.4528L23.6167 18.9209C23.7476 18.8625 23.8333 18.7368 23.8333 18.593Z" fill="#E95959"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_412_373">
+                        <rect width="26" height="23" fill="white"/>
+                        </clipPath>
+                        </defs>
+                        </svg>                        
+                </div>
+                <span>Intégration Web</span>
+                <p>Réalisation de votre intégration HTML/CSS, respectueuse des standards du web d’aujourd’hui.</p>
+            </article>
+            <article data-aos="fade-up" data-aos-delay="200" class="services__CardGrp__card">
+                <div class="services__CardGrp__card-circle">
+                    <svg width="26" height="21" viewBox="0 0 26 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20.8221 3.9375H18.1252V2.625H5.28832V11.8125H14.3497V15.0938H1.94422C0.304544 15.0938 -0.0334595 13.8542 0.00249827 13.2344V11.8125H2.59146V1.20312C2.59146 0.328125 3.38253 0.0364583 3.77806 0H19.5276C20.4769 0 20.7861 0.802083 20.8221 1.20312V3.9375Z" fill="#E95959"/>
+                        <path d="M15.5363 19.1406V15.9688V7C15.5363 5.5125 16.7589 5.14062 17.3701 5.14062H24.0583C25.6117 5.14062 26 6.45312 26 7.10938V18.9219C26 20.5844 24.7055 21 24.0583 21H17.478C15.9246 21 15.5363 19.7604 15.5363 19.1406Z" fill="#E95959"/>
+                        </svg>
+                </div>
+                <span>Responsive design</span>
+                <p>Site web et application compatible sur tout types de devices, tablette, smartphone.</p>
+            </article>
+            <article data-aos="fade-up" data-aos-delay="300" class="services__CardGrp__card">
+                <div class="services__CardGrp__card-circle">
+                    <svg width="26" height="23" viewBox="0 0 26 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11.2306 0.224335C11.2802 0.08939 11.4111 0 11.5556 0C11.7 0 11.8309 0.08939 11.8806 0.224335L12.517 1.91681L14.2187 2.55111C14.3542 2.60187 14.4444 2.73079 14.4444 2.87499C14.4444 3.01919 14.3542 3.14812 14.2187 3.19888L12.517 3.83318L11.8806 5.52538C11.8309 5.66015 11.7 5.74999 11.5556 5.74999C11.4111 5.74999 11.2802 5.66015 11.2306 5.52538L10.5941 3.83318L8.85174 3.19888C8.71632 3.14812 8.66667 3.01919 8.66667 2.87499C8.66667 2.73079 8.71632 2.60187 8.85174 2.55111L10.5941 1.91681L11.2306 0.224335ZM19.2924 0.631597C20.141 -0.210508 21.5132 -0.210508 22.3573 0.631597L23.9191 2.18499C24.7632 3.02683 24.7632 4.39245 23.9191 5.23339L6.70312 22.3666C5.85903 23.2066 4.4859 23.2066 3.64 22.3666L2.0791 20.8123C1.23274 19.9723 1.23274 18.6066 2.0791 17.7621L19.2924 0.631597ZM20.8271 2.66431L16.083 7.38066L17.1347 8.42733L21.8743 3.70964L20.8271 2.66431ZM0.338135 5.26484L2.88889 4.31249L3.84538 1.77396C3.92167 1.57136 4.11621 1.43749 4.33333 1.43749C4.55 1.43749 4.7441 1.57136 4.82083 1.77396L5.77778 4.31249L8.32812 5.26484C8.53125 5.3412 8.66667 5.53437 8.66667 5.74999C8.66667 5.96562 8.53125 6.15878 8.32812 6.23515L5.77778 7.18749L4.82083 9.72558C4.7441 9.92772 4.55 10.0625 4.33333 10.0625C4.11621 10.0625 3.92167 9.92772 3.84538 9.72558L2.88889 7.18749L0.338135 6.23515C0.13474 6.15878 0 5.96562 0 5.74999C0 5.53437 0.13474 5.3412 0.338135 5.26484ZM16.2274 16.7648L18.7778 15.8125L19.7347 13.2744C19.8115 13.0318 20.0056 12.9375 20.2222 12.9375C20.4389 12.9375 20.633 13.0318 20.7097 13.2744L21.6667 15.8125L24.217 16.7648C24.4201 16.8412 24.5556 17.0344 24.5556 17.25C24.5556 17.4656 24.4201 17.6588 24.217 17.7351L21.6667 18.6875L20.7097 21.2256C20.633 21.4277 20.4389 21.5625 20.2222 21.5625C20.0056 21.5625 19.8115 21.4277 19.7347 21.2256L18.7778 18.6875L16.2274 17.7351C15.9837 17.6588 15.8889 17.4656 15.8889 17.25C15.8889 17.0344 15.9837 16.8412 16.2274 16.7648Z" fill="#E95959"/>
+                        </svg>
+                </div>
+                <span>dynamisme des pages</span>
+                <p>Des animations de qualité, utiles et non envahissantes, pour un rendu final d’une qualitée irréprochable.</p>
+            </article>
+            <article data-aos="fade-up" data-aos-delay="100" class="services__CardGrp__card">
+                <div class="services__CardGrp__card-circle">
+                    <svg width="19" height="21" viewBox="0 0 19 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18.8261 5.25V15.75L9.24553 21L0 15.75V6.96035L3.71518 8.81016V13.609L9.37701 16.7057L15.1364 13.609V7.41563L10.8487 5.05312L14.5638 2.8752L18.8261 5.25ZM13.0879 2.01387L9.49152 0L5.73393 2.24766L9.38125 4.1877L13.0879 2.01387Z" fill="#E95959"/>
+                        </svg>
+                                            
+                </div>
+                <span>conception UI design</span>
+                <p>Si besoin, je réalise votre maquette graphique selon vos critères, et ce, sous format Web et mobile.</p>
+            </article>
+            <article data-aos="fade-up" data-aos-delay="200" class="services__CardGrp__card">
+                <div class="services__CardGrp__card-circle">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_412_337)">
+                        <path d="M12.9609 8.75397C14.066 8.75397 15.1047 9.18326 15.8852 9.96373L16.6504 10.729C18.2133 10.036 19.4336 8.64693 19.8387 6.95358C20.0623 6.0192 20.0473 5.11451 19.8471 4.2817C19.745 3.8567 19.2053 3.7149 18.8963 4.02373L16.2049 6.71514H13.2518V3.79693L15.9432 1.10553C16.2522 0.796466 16.1101 0.2567 15.6852 0.154747C14.8524 -0.0454482 13.9477 -0.0604873 13.0133 0.163138C10.8532 0.679935 9.16995 2.51548 8.82581 4.71001C8.76953 5.03522 8.75781 5.35162 8.76172 5.66412L11.9953 8.90084C12.3125 8.79303 12.6367 8.75397 12.9609 8.75397ZM15 10.8829C14.0953 9.97818 12.7512 9.80592 11.6645 10.3399L7.46484 6.17193V3.74967L2.5 5.95815e-05L0 2.4649L3.75 7.42975L6.17344 7.43005L10.3414 11.5941C9.80742 12.6808 9.98004 14.025 10.8848 14.9297L15.4551 19.5039C16.0262 20.0703 16.9477 20.0703 17.5141 19.5038L19.5746 17.4433C20.141 16.8769 20.141 15.9558 19.5745 15.3843L15 10.8829ZM8.90234 11.9922L6.58984 9.68365L0.773438 15.5001C-0.256641 16.5301 -0.256641 18.1985 0.773438 19.2286C1.2875 19.7422 1.96133 20.0001 2.63672 20.0001C3.31211 20.0001 3.98594 19.7426 4.50078 19.2274L9.15313 14.5751C8.80859 13.7618 8.69531 12.8672 8.90234 11.9922ZM2.5 18.4376C1.98242 18.4376 1.5625 18.0176 1.5625 17.5001C1.5625 16.9821 1.98242 16.5626 2.5 16.5626C3.01758 16.5626 3.4375 16.9805 3.4375 17.5001C3.4375 18.0196 3.01758 18.4376 2.5 18.4376Z" fill="#E95959"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_412_337">
+                        <rect width="20" height="20" fill="white"/>
+                        </clipPath>
+                        </defs>
+                        </svg>
+                </div>
+                <span>interface d’administration</span>
+                <p>Création d’un interface d’administration spécifique à votre activités professionnelle.</p>
+            </article>
+            <article data-aos="fade-up" data-aos-delay="300" class="services__CardGrp__card">
+                <div class="services__CardGrp__card-circle">
+                    <svg width="26" height="21" viewBox="0 0 26 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_412_328)">
+                        <path d="M16.8512 1.67286L11.6512 20.0483C11.4522 20.7455 10.7331 21.1475 10.0425 20.9506C9.35187 20.7496 8.95375 20.0237 9.14875 19.3264L14.3488 0.951804C14.5478 0.254785 15.2669 -0.148809 15.9575 0.0503631C16.6481 0.249494 17.0462 0.976004 16.8512 1.67286ZM21.0681 4.97913L25.6181 9.57288C26.1259 10.0856 26.1259 10.9141 25.6181 11.4268L21.0681 16.0205C20.5603 16.5332 19.7397 16.5332 19.2319 16.0205C18.7241 15.5078 18.7241 14.6793 19.2319 14.1666L22.8597 10.4998L19.2319 6.83304C18.7241 6.32034 18.7241 5.49182 19.2319 4.97913C19.7397 4.46643 20.5603 4.46643 21.0681 4.97913ZM6.76813 6.83304L3.13828 10.4998L6.76813 14.1666C7.27594 14.6793 7.27594 15.5078 6.76813 16.0205C6.26031 16.5332 5.43969 16.5332 4.93187 16.0205L0.380737 11.4268C-0.126913 10.9141 -0.126913 10.0856 0.380737 9.57288L4.93187 4.97913C5.43969 4.46643 6.26031 4.46643 6.76813 4.97913C7.27594 5.49182 7.27594 6.32034 6.76813 6.83304Z" fill="#E95959"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_412_328">
+                        <rect width="26" height="21" fill="white"/>
+                        </clipPath>
+                        </defs>
+                        </svg>
+                </div>
+                <span>Développements spécifiques</span>
+                <p>Création d’outils spécifique à votre demande, applications & solutions personnalisées.</p>
+            </article>
+        </div>
+    </section>
+    <section id="project" class="project">
+        
+        <div class="title">
+            <h4>Mes Projets</h4>
+            <p>Une partie des <b>projets</b> sur lesquels j’ai travaillé</p>
+        </div>
+
+        <article class="project__left">
+            <img src="public/img/herobanner.png" style="background: linear-gradient(0deg, rgba(233, 89, 89, 0.1), rgba(233, 89, 89, 0.1));" alt="">
+            <div class="project__left__description">
+                <span class="project__left__description-type">Site Web</span>
+                <span class="project__left__description-name">E-sport Legacy</span>
+                <p><b>E-sport legacy</b> est une association loi 1901 qui vise à étendre le monde de l’e-sport à tous. Le site est constitué d’une <b>landing page</b> ainsi que d’une page de <b>blog</b>.  </p>
+                <div class="project__left__description__tech">
+                    <span>Symfony</span>
+                    <span>Sass</span>
+                    <span>Twig 3</span>
+                    <span>Javascript</span>
+                </div>
+                <a href="https://esportlegacy.com" class="link">
+                    <i class="fa-solid fa-arrow-up-right-from-square fa-lg"></i>
+                </a>                   
+            </div>
+        </article>
+        <article class="project__right">
+            <img src="public/img/herobanner.png" style="background: linear-gradient(0deg, rgba(233, 89, 89, 0.1), rgba(233, 89, 89, 0.1));" alt="">
+            <div class="project__right__description">
+                <span class="project__right__description-type">Site Web</span>
+                <span class="project__right__description-name">E-sport Legacy</span>
+                <p>E-sport legacy est une association loi 1901 qui vise à étendre le monde de l’e-sport à tous. Le site est constitué d’une landing page ainsi que d’une page de blog.  </p>
+                <div class="project__right__description__tech">
+                    <span>Symfony</span>
+                    <span>Sass</span>
+                    <span>Twig 3</span>
+                    <span>Javascript</span>
+                </div>
+                <a href="https://esportlegacy.com">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M19 19H5V5H12V3H5C3.89 3 3 3.9 3 5V19C3 20.1 3.89 21 5 21H19C20.1 21 21 20.1 21 19V12H19V19ZM14 3V5H17.59L7.76 14.83L9.17 16.24L19 6.41V10H21V3H14Z" fill="#FDFDFD"/>
+                    </svg> 
+                </a>                   
+            </div>
+        </article>
+        <article class="project__left">
+            <img src="public/img/herobanner.png" style="background: linear-gradient(0deg, rgba(233, 89, 89, 0.1), rgba(233, 89, 89, 0.1));" alt="">
+            <div class="project__left__description">
+                <span class="project__left__description-type">Site Web</span>
+                <span class="project__left__description-name">E-sport Legacy</span>
+                <p>E-sport legacy est une association loi 1901 qui vise à étendre le monde de l’e-sport à tous. Le site est constitué d’une landing page ainsi que d’une page de blog.  </p>
+                <div class="project__left__description__tech">
+                    <span>Symfony</span>
+                    <span>Sass</span>
+                    <span>Twig 3</span>
+                    <span>Javascript</span>
+                </div>
+                <a href="https://esportlegacy.com">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M19 19H5V5H12V3H5C3.89 3 3 3.9 3 5V19C3 20.1 3.89 21 5 21H19C20.1 21 21 20.1 21 19V12H19V19ZM14 3V5H17.59L7.76 14.83L9.17 16.24L19 6.41V10H21V3H14Z" fill="#FDFDFD"/>
+                    </svg> 
+                </a>                   
+            </div>
+        </article>
+    </section>
+
+    <section id="tarif" class="tarifs">
+        
+        <div class="title">
+            <h4>Tarifs</h4>
+            <p>Un tarif adapté à <b>un site internet de qualité</b> !</p>
+        </div>
+        
+        <div class="tarifs__CardGrp">
+            <article class="tarifs__CardGrp__card">
+                <div class="tarifs__CardGrp__card__title">
+                    <span>site vitrine standard</span>
+                    <div class="bar"></div>
+                    <span>à partir de</span>
+                    <p>799€</p>
+                </div>
+                <div class="tarifs__CardGrp__card__description">
+                    <ul>
+                        <li>
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="14" height="14" rx="3" fill="#4B4B4B"/>
+                            <rect x="6" y="3" width="2" height="8" rx="1" fill="white"/>
+                            <rect x="11" y="6" width="2" height="8" rx="1" transform="rotate(90 11 6)" fill="white"/>
+                            </svg>
+
+                            <a>Domaine + hébergement + e-mail pendant 12 mois</a>
+                        </li>
+                        <li>
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="14" height="14" rx="3" fill="#4B4B4B"/>
+                            <rect x="6" y="3" width="2" height="8" rx="1" fill="white"/>
+                            <rect x="11" y="6" width="2" height="8" rx="1" transform="rotate(90 11 6)" fill="white"/>
+                            </svg>
+
+                            <a>Email professionnel personnalisé Illimité</a>
+                        </li>
+                        <li>
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="14" height="14" rx="3" fill="#4B4B4B"/>
+                            <rect x="6" y="3" width="2" height="8" rx="1" fill="white"/>
+                            <rect x="11" y="6" width="2" height="8" rx="1" transform="rotate(90 11 6)" fill="white"/>
+                            </svg>
+
+                            <a>Intégration de la maquette UI réalisé au préalable par un designer</a>
+                        </li>
+                        <li>
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="14" height="14" rx="3" fill="#4B4B4B"/>
+                            <rect x="6" y="3" width="2" height="8" rx="1" fill="white"/>
+                            <rect x="11" y="6" width="2" height="8" rx="1" transform="rotate(90 11 6)" fill="white"/>
+                            </svg>
+
+                            <a>Statistique de visite</a>
+                        </li>
+                        <li>
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="14" height="14" rx="3" fill="#4B4B4B"/>
+                            <rect x="6" y="3" width="2" height="8" rx="1" fill="white"/>
+                            <rect x="11" y="6" width="2" height="8" rx="1" transform="rotate(90 11 6)" fill="white"/>
+                            </svg>
+
+                            <a>Site responsive (adapté tous supports)</a>
+                        </li>
+                        <li>
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="14" height="14" rx="3" fill="#4B4B4B"/>
+                            <rect x="6" y="3" width="2" height="8" rx="1" fill="white"/>
+                            <rect x="11" y="6" width="2" height="8" rx="1" transform="rotate(90 11 6)" fill="white"/>
+                            </svg>
+
+                            <a>Interface Administrateur STANDARD</a>
+                        </li>
+                        <li>
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="14" height="14" rx="3" fill="#4B4B4B"/>
+                            <rect x="6" y="3" width="2" height="8" rx="1" fill="white"/>
+                            <rect x="11" y="6" width="2" height="8" rx="1" transform="rotate(90 11 6)" fill="white"/>
+                            </svg>
+
+                            <a>Mise en ligne du site</a>
+                        </li>
+                        <li>
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="14" height="14" rx="3" fill="#4B4B4B"/>
+                            <rect x="6" y="3" width="2" height="8" rx="1" fill="white"/>
+                            <rect x="11" y="6" width="2" height="8" rx="1" transform="rotate(90 11 6)" fill="white"/>
+                            </svg>
+
+                            <a>Lien de partage de vos différents réseaux sociaux</a>
+                        </li>
+                        <li>
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="14" height="14" rx="3" fill="#4B4B4B"/>
+                            <rect x="6" y="3" width="2" height="8" rx="1" fill="white"/>
+                            <rect x="11" y="6" width="2" height="8" rx="1" transform="rotate(90 11 6)" fill="white"/>
+                            </svg>
+
+                            <a>Formation utilisation du site</a>
+                        </li>
+                    </ul>
+                </div>
+                <a class="cta" href="#contact">demander un devis</a>
+            </article>
+            <article class="tarifs__CardGrp__Darkcard">
+                <div class="tarifs__CardGrp__Darkcard__title">
+                    <span>site vitrine personnalisé</span>
+                    <div class="bar"></div>
+                    <span>à partir de</span>
+                    <p>1299€</p>
+                </div>
+                <div class="tarifs__CardGrp__Darkcard__description">
+                    <ul>
+                        <li>
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="14" height="14" rx="3" fill="#4B4B4B"/>
+                            <rect x="6" y="3" width="2" height="8" rx="1" fill="white"/>
+                            <rect x="11" y="6" width="2" height="8" rx="1" transform="rotate(90 11 6)" fill="white"/>
+                            </svg>
+
+                            <a>Domaine + hébergement + e-mail pendant 12 mois</a>
+                        </li>
+                        <li>
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="14" height="14" rx="3" fill="#4B4B4B"/>
+                            <rect x="6" y="3" width="2" height="8" rx="1" fill="white"/>
+                            <rect x="11" y="6" width="2" height="8" rx="1" transform="rotate(90 11 6)" fill="white"/>
+                            </svg>
+
+                            <a>Email professionnel personnalisé Illimité</a>
+                        </li>
+                        <li>
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="14" height="14" rx="3" fill="#4B4B4B"/>
+                            <rect x="6" y="3" width="2" height="8" rx="1" fill="white"/>
+                            <rect x="11" y="6" width="2" height="8" rx="1" transform="rotate(90 11 6)" fill="white"/>
+                            </svg>
+
+                            <a>Intégration de la maquette UI réalisé au préalable par un designer</a>
+                        </li>
+                        <li>
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="14" height="14" rx="3" fill="#4B4B4B"/>
+                            <rect x="6" y="3" width="2" height="8" rx="1" fill="white"/>
+                            <rect x="11" y="6" width="2" height="8" rx="1" transform="rotate(90 11 6)" fill="white"/>
+                            </svg>
+
+                            <a>Statistique de visite</a>
+                        </li>
+                        <li>
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="14" height="14" rx="3" fill="#4B4B4B"/>
+                            <rect x="6" y="3" width="2" height="8" rx="1" fill="white"/>
+                            <rect x="11" y="6" width="2" height="8" rx="1" transform="rotate(90 11 6)" fill="white"/>
+                            </svg>
+
+                            <a>Site responsive (adapté tous supports)</a>
+                        </li>
+                        <li>
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="14" height="14" rx="3" fill="#4B4B4B"/>
+                            <rect x="6" y="3" width="2" height="8" rx="1" fill="white"/>
+                            <rect x="11" y="6" width="2" height="8" rx="1" transform="rotate(90 11 6)" fill="white"/>
+                            </svg>
+
+                            <a>Interface Administrateur STANDARD</a>
+                        </li>
+                        <li>
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="14" height="14" rx="3" fill="#4B4B4B"/>
+                            <rect x="6" y="3" width="2" height="8" rx="1" fill="white"/>
+                            <rect x="11" y="6" width="2" height="8" rx="1" transform="rotate(90 11 6)" fill="white"/>
+                            </svg>
+
+                            <a>Mise en ligne du site</a>
+                        </li>
+                        <li>
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="14" height="14" rx="3" fill="#4B4B4B"/>
+                            <rect x="6" y="3" width="2" height="8" rx="1" fill="white"/>
+                            <rect x="11" y="6" width="2" height="8" rx="1" transform="rotate(90 11 6)" fill="white"/>
+                            </svg>
+
+                            <a>Lien de partage de vos différents réseaux sociaux</a>
+                        </li>
+                        <li>
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="14" height="14" rx="3" fill="#4B4B4B"/>
+                            <rect x="6" y="3" width="2" height="8" rx="1" fill="white"/>
+                            <rect x="11" y="6" width="2" height="8" rx="1" transform="rotate(90 11 6)" fill="white"/>
+                            </svg>
+
+                            <a>Formation utilisation du site</a>
+                        </li>
+                    </ul>
+                </div>
+                <a class="cta" href="#contact">demander un devis</a>
+            </article>
+            <article class="tarifs__CardGrp__card">
+                <div class="tarifs__CardGrp__card__title">
+                    <span>site vitrine standard</span>
+                    <div class="bar"></div>
+                    <span>à partir de</span>
+                    <p>50€</p>
+                    <p class="tarifs__CardGrp__card__title-info">/ heure</p>
+                </div>
+                
+                <a class="cta" href="#contact">me contacter</a>
+            </article>
+            <article class="tarifs__CardGrp__Darkcard">
+                <div class="tarifs__CardGrp__Darkcard__title">
+                    <span>Développements spécifiques</span>
+                    <div class="bar"></div>
+                    <span>à partir de</span>
+                    <p>400€</p>
+                    <p class="tarifs__CardGrp__Darkcard__title-info">/ jour</p>
+                </div>
+                
+                <a class="cta" href="#contact">me contacter</a>
+            </article>
+        </div>
+    </section>
+    <section id="contact" class="contact">
+        <div class="title">
+            <h6>Contact</h6>
+            <p>Vous avez un projet en tête ? Travaillons ensemble !</p>
+        </div>
+
+            <form class="contact__form" action="">
+                <div class="contact__form__InputGrp">
+                    <label for="">Nom, prénom<b> *</b></label>
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8 8C10.21 8 12 6.21 12 4C12 1.79 10.21 0 8 0C5.79 0 4 1.79 4 4C4 6.21 5.79 8 8 8ZM8 10C5.33 10 0 11.34 0 14V16H16V14C16 11.34 10.67 10 8 10Z" fill="white"/>
+                    </svg>  
+                    <input type="text" name="pseudo" id="">
+                </div>
+                <div class="contact__form__InputGrp">
+                    <label for="">E-mail<b> *</b></label>
+                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9 1.5C4.86 1.5 1.5 4.86 1.5 9C1.5 13.14 4.86 16.5 9 16.5H12.75V15H9C5.745 15 3 12.255 3 9C3 5.745 5.745 3 9 3C12.255 3 15 5.745 15 9V10.0725C15 10.665 14.4675 11.25 13.875 11.25C13.2825 11.25 12.75 10.665 12.75 10.0725V9C12.75 6.93 11.07 5.25 9 5.25C6.93 5.25 5.25 6.93 5.25 9C5.25 11.07 6.93 12.75 9 12.75C10.035 12.75 10.98 12.33 11.655 11.6475C12.1425 12.315 12.9825 12.75 13.875 12.75C15.3525 12.75 16.5 11.55 16.5 10.0725V9C16.5 4.86 13.14 1.5 9 1.5ZM9 11.25C7.755 11.25 6.75 10.245 6.75 9C6.75 7.755 7.755 6.75 9 6.75C10.245 6.75 11.25 7.755 11.25 9C11.25 10.245 10.245 11.25 9 11.25Z" fill="white"/>
+                    </svg>                        
+                    <input type="text" name="pseudo" id="">
+                </div>
+                <div class="contact__form__InputGrp">
+                    <label for="">Sujet<b> *</b></label>
+                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M14.25 1.5H3.75C2.9175 1.5 2.25 2.175 2.25 3V13.5C2.25 14.325 2.9175 15 3.75 15H6.75L9 17.25L11.25 15H14.25C15.075 15 15.75 14.325 15.75 13.5V3C15.75 2.175 15.075 1.5 14.25 1.5ZM9.75 13.5H8.25V12H9.75V13.5ZM11.3025 7.6875L10.6275 8.3775C10.0875 8.925 9.75 9.375 9.75 10.5H8.25V10.125C8.25 9.3 8.5875 8.55 9.1275 8.0025L10.0575 7.0575C10.335 6.7875 10.5 6.4125 10.5 6C10.5 5.175 9.825 4.5 9 4.5C8.175 4.5 7.5 5.175 7.5 6H6C6 4.3425 7.3425 3 9 3C10.6575 3 12 4.3425 12 6C12 6.66 11.73 7.26 11.3025 7.6875Z" fill="white"/>
+                    </svg>
+                    
+                    <input type="text" name="pseudo" id="">
+                </div>
+                <div class="contact__form__InputGrp">
+                    <label for="">Message<b> *</b></label>
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Entrer votre message..."></textarea>
+                </div>
+                <div class="contact__form__InputGrp">
+                    <button>Envoyer mon message<i class="fa-solid fa-location-arrow fa-sm"></i></button>
+                </div>
+            </form>
+    </section>
+    <footer class="footer">
+        <div class="footer__content">
+            <div class="footer__content__about">
+                <span>Aurélien Heude</span>
+                <p>Développeur freelance depuis décembre 2021, Développeur depuis 7 ans, j'ai pu travaillé sur tout type de projet web au cours de ma vie, aujourd'hui je compte enfin vivre de ma passion en freelancing.</p>
+            </div>
+            <ul class="footer__content__social">
+                <li>Réseaux</li>
+                <li><a href="">Github</a></li>
+                <li><a href="">Dribble</a></li>
+                <li><a href="">Twitter</a></li>
+            </ul>
+            <ul class="footer__content__link">
+                <li>Liens utiles</li>
+                <li><a href="#service">Services</a></li>
+                <li><a href="#project">Portfolio</a></li>
+                <li><a href="#tarif">Tarifs</a></li>
+                <li><a href="#about">A propos</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <ul class="footer__content__contact">
+                <li>Contact</li>
+                <li><i class="fa-solid fa-envelope"></i>contact@aurelienheude.com</li>
+                <li><i class="fa-solid fa-phone"></i>06 04 14 96 14</li>
+                <li><i class="fa-solid fa-gear"></i>S.I.R.E.N - 908 488 885</li>
+            </ul>
+        </div>
+        <div class="footer__credit">
+            <p>© 2022 design et réalisation par <a href="https://www.linkedin.com/in/aurelienheude/">Aurélien Heude</a></p>
+            <div class="footer__credit-comeback">
+                <a href="#menu">Vers le haut <i class="fa-solid fa-arrow-up-long fa-2"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>

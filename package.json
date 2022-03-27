@@ -1,0 +1,12 @@
+{
+  "name": "templatebackoffice",
+  "version": "1.0.0",
+  "description": "template back office chez esport legacy réalisé par aurélien Heude & Kekster The Frog",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch sass/app.scss public/css/style.css",
+    "build": "sass --watch sass/app.scss public/css/style.css --style compressed"
+  },
+  "author": "E-sport legacy",
+  "license": "MIT"
+}
