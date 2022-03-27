@@ -925,15 +925,4 @@ html, body {
   color: #262626;
 }
 
-@media only screen and (max-width: 1024px) {
-  h1 {
-    width: 70%;
-  }
-}
-@media only screen and (max-width: 768px) {
-  h1 {
-    width: 90%;
-  }
-}
-
 /*# sourceMappingURL=style.css.map */
