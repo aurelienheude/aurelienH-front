@@ -303,7 +303,7 @@ html, body {
 .herobanner h1 b {
   font-style: normal;
   font-weight: 700;
-  font-size: 64px;
+  font-size: 2.25em;
   line-height: 75px;
   display: flex;
   align-items: center;
@@ -336,6 +336,18 @@ html, body {
   border: 2px solid #5e5e5ea1;
 }
 
+@media screen and (max-width: 564px) {
+  .herobanner h1 {
+    font-size: 1.5em;
+  }
+  .herobanner h1 b {
+    font-size: 2em;
+    line-height: 50px;
+  }
+  .herobanner a {
+    width: 95%;
+  }
+}
 .services {
   display: flex;
   align-items: center;
