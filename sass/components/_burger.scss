@@ -1,48 +1,48 @@
 .burger{
-    width: 22px;
-    height:24px;
-    cursor:pointer;
-    position: relative;
-    /*
-    &.active span{
-      background-color: transparent;
+  position: relative;
+  cursor: pointer;
   
-      &::before{
-        transform: translateY(0) rotateZ(45deg);
-      }
-      &::after{
-        transform: translateY(0) rotateZ(-45deg);
-      }
-    }
-    */
-    span{
-      width: 100%;
-      height: 2px;
-      background: black;
-      display: block;
+  width: 42px;
+  height: 24px;
+}
+
+.burger .span{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    height: 3px;
+    display: block;
+    background: #262626;
+    transform: translateY(-50%);
+    transition: background-color 0.1s;
+}
+.burger .span::after, .burger .span::before{
+      content: '';
       position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      transition: background-color 0.1s ease-in-out;
-      border-radius: 0px;
+
+      width: 100%;
+      height: 3px;
+
+      background: #262626;
+      transition: transform 0.2s;
+}
+    
+.burger .span::before{
+  transform: translateY(-10px);
+}
+    
+.burger .span::after{
+  transform: translateY(10px);
+}
   
-      &::before, &::after{
-        content: '';
-        position: absolute;
-        width: 100%;
-        height: 2px;
-        border-radius: 0px;
-        background: black;
-        transition: transform 0.2s ease-in-out;
-      }
-  
-      &::before{
-        transform: translateY(-6px);
-      }
-  
-      &::after{
-        transform: translateY(6px);
-      }
-  
-    }
-  }
+.burger.active .span{
+  background-color: transparent;
+}
+
+.burger.active .span::before{
+  transform: translateY(0px) rotateZ(-45deg);
+}
+
+.burger.active .span::after{
+  transform: translateY(0px) rotateZ(45deg);
+}
