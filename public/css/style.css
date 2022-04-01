@@ -185,18 +185,21 @@ html, body {
 }
 
 .navBurger {
+  display: none;
   position: absolute;
   top: 0;
   width: 100%;
   height: 100%;
-  z-index: 999;
-  background: green;
+  z-index: 3;
+  background: #fff;
 }
 .navBurger ul {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  height: 100%;
+  width: 100%;
   gap: 21px;
 }
 .navBurger ul li {
@@ -209,8 +212,8 @@ html, body {
   text-align: center;
   font-style: normal;
   font-weight: 500;
-  font-size: 18px;
-  line-height: 21px;
+  font-size: 1.9em;
+  line-height: 60px;
   text-decoration: none;
   color: #262626;
   transition: color 0.2s;
@@ -329,7 +332,7 @@ html, body {
   justify-content: center;
   flex-direction: column;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   padding-left: 5%;
   padding-right: 5%;
   gap: 170px;
