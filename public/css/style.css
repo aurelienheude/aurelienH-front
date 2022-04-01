@@ -184,20 +184,64 @@ html, body {
   transition: width 0.3s;
 }
 
+.navBurger {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  background: green;
+}
+.navBurger ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 21px;
+}
+.navBurger ul li {
+  list-style: none;
+}
+.navBurger ul li a {
+  position: relative;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  text-decoration: none;
+  color: #262626;
+  transition: color 0.2s;
+}
+.navBurger ul li a:hover {
+  color: black;
+}
+.navBurger ul li a:hover .bar {
+  width: 100%;
+}
+.navBurger ul li a .bar {
+  position: absolute;
+  bottom: -5px;
+  width: 0%;
+  height: 2px;
+  background: #f16464;
+  transition: width 0.3s;
+}
+
 @media screen and (min-width: 1024px) {
   .nav .burger {
     display: none;
   }
 }
 @media screen and (max-width: 1024px) {
-  .nav ul {
-    display: none;
-  }
-}
-@media screen and (max-width: 768px) {
   .nav {
     padding-left: 5%;
     padding-right: 5%;
+  }
+  .nav ul {
+    display: none;
   }
 }
 .burger {
