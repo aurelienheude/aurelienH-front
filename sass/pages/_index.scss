@@ -10,7 +10,10 @@
     padding-right: 5%;
     gap: 170px;
 
-    background: #fff;
+    background: linear-gradient(0deg, rgba(24, 24, 24, 0.82), rgba(24, 24, 24, 0.82)), url(../../public/img/banner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 
     h1{
         font-style: normal;
@@ -19,7 +22,7 @@
         line-height: 2.750em;
         text-align: center;
         text-transform: uppercase;
-        color: #262626;
+        color: rgb(223, 223, 223);
 
         b{
             font-style: normal;
@@ -30,7 +33,7 @@
             align-items: center;
             text-align: center;
             letter-spacing: -0.05em;
-            color: #262626;
+            color: rgb(223, 223, 223);
         }
     }
 
@@ -51,18 +54,14 @@
             text-transform: uppercase;
             text-decoration: none;
 
-            border: 2px solid rgba(255, 255, 255, 1);
-            border-radius: 25px;
-
             color: #fff;
-
-            background: #262626;
+            border: 2px solid #fff;
+            
             transition: background 0.3s, color 0.3s, border 0.3s;
 
             &:hover{
                 background: #fff;
                 color: #262626;
-                border: 2px solid #5e5e5ea1;
             }   
     }
 }

@@ -10,6 +10,7 @@ html, body {
   margin: 0px;
   padding: 0px;
   height: 100%;
+  position: relative;
 }
 
 ::-webkit-scrollbar {
@@ -135,10 +136,13 @@ html, body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: absolute;
+  top: 0;
   padding-top: 9px;
   padding-bottom: 9px;
   padding-left: 15%;
   padding-right: 15%;
+  width: 100vw;
 }
 .nav svg {
   transition: all 0.9s;
@@ -166,11 +170,11 @@ html, body {
   font-size: 18px;
   line-height: 21px;
   text-decoration: none;
-  color: #262626;
+  color: #dfdfdf;
   transition: color 0.2s;
 }
 .nav ul li a:hover {
-  color: black;
+  color: #fff;
 }
 .nav ul li a:hover .bar {
   width: 100%;
@@ -191,7 +195,7 @@ html, body {
   width: 100%;
   height: 100%;
   z-index: 3;
-  background: #fff;
+  background: #262626;
 }
 .navBurger ul {
   display: flex;
@@ -215,11 +219,11 @@ html, body {
   font-size: 1.9em;
   line-height: 60px;
   text-decoration: none;
-  color: #262626;
+  color: #dfdfdf;
   transition: color 0.2s;
 }
 .navBurger ul li a:hover {
-  color: black;
+  color: #fff;
 }
 .navBurger ul li a:hover .bar {
   width: 100%;
@@ -260,7 +264,7 @@ html, body {
   width: 100%;
   height: 3px;
   display: block;
-  background: #262626;
+  background: #dfdfdf;
   transform: translateY(-50%);
   transition: background-color 0.1s;
 }
@@ -270,7 +274,7 @@ html, body {
   position: absolute;
   width: 100%;
   height: 3px;
-  background: #262626;
+  background: #dfdfdf;
   transition: transform 0.2s;
 }
 
@@ -336,7 +340,10 @@ html, body {
   padding-left: 5%;
   padding-right: 5%;
   gap: 170px;
-  background: #fff;
+  background: linear-gradient(0deg, rgba(24, 24, 24, 0.82), rgba(24, 24, 24, 0.82)), url(../../public/img/banner.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .herobanner h1 {
   font-style: normal;
@@ -345,7 +352,7 @@ html, body {
   line-height: 2.75em;
   text-align: center;
   text-transform: uppercase;
-  color: #262626;
+  color: #dfdfdf;
 }
 .herobanner h1 b {
   font-style: normal;
@@ -356,7 +363,7 @@ html, body {
   align-items: center;
   text-align: center;
   letter-spacing: -0.05em;
-  color: #262626;
+  color: #dfdfdf;
 }
 .herobanner a {
   position: relative;
@@ -371,16 +378,13 @@ html, body {
   line-height: 22px;
   text-transform: uppercase;
   text-decoration: none;
-  border: 2px solid white;
-  border-radius: 25px;
   color: #fff;
-  background: #262626;
+  border: 2px solid #fff;
   transition: background 0.3s, color 0.3s, border 0.3s;
 }
 .herobanner a:hover {
   background: #fff;
   color: #262626;
-  border: 2px solid #5e5e5ea1;
 }
 
 @media screen and (max-width: 564px) {
