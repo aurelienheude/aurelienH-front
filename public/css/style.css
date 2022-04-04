@@ -216,7 +216,7 @@ html, body {
   text-align: center;
   font-style: normal;
   font-weight: 500;
-  font-size: 1.9em;
+  font-size: 1.3em;
   line-height: 60px;
   text-decoration: none;
   color: #dfdfdf;
@@ -355,13 +355,13 @@ html, body {
   color: #dfdfdf;
 }
 .herobanner h1 b {
+  display: flex;
+  align-items: center;
+  text-align: center;
   font-style: normal;
   font-weight: 700;
   font-size: 2.25em;
   line-height: 75px;
-  display: flex;
-  align-items: center;
-  text-align: center;
   letter-spacing: -0.05em;
   color: #dfdfdf;
 }
