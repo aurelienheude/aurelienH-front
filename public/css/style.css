@@ -333,13 +333,14 @@ html, body {
 .herobanner {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
   flex-direction: column;
   width: 100%;
   height: 100%;
   padding-left: 5%;
   padding-right: 5%;
-  gap: 170px;
+  padding-bottom: 10%;
+  gap: 35%;
   background: linear-gradient(0deg, rgba(24, 24, 24, 0.82), rgba(24, 24, 24, 0.82)), url(../../public/img/banner.jpg);
   background-position: center;
   background-repeat: no-repeat;
