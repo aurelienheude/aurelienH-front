@@ -33,3 +33,21 @@
     }
 
 }
+
+@media screen and (max-width: 564px) {
+    .title{
+        width: 90%;
+        h2, h3, h4, h5, h6{
+            width: 90%;
+        }
+
+        p{
+            max-width: 300px;
+        }
+
+        a{
+
+            width: 95%;
+        }
+    }
+}

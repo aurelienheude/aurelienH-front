@@ -329,6 +329,20 @@ html, body {
   color: #E95959;
 }
 
+@media screen and (max-width: 564px) {
+  .title {
+    width: 90%;
+  }
+  .title h2, .title h3, .title h4, .title h5, .title h6 {
+    width: 90%;
+  }
+  .title p {
+    max-width: 300px;
+  }
+  .title a {
+    width: 95%;
+  }
+}
 .herobanner {
   display: flex;
   align-items: center;
@@ -453,6 +467,18 @@ html, body {
   color: #383838;
 }
 
+@media screen and (max-width: 564px) {
+  .services h1 {
+    font-size: 1.8em;
+  }
+  .services h1 b {
+    font-size: 2em;
+    line-height: 50px;
+  }
+  .services a {
+    width: 95%;
+  }
+}
 .project {
   display: grid;
   grid-template-columns: 1fr 1300px 1fr;

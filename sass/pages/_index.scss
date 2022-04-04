@@ -152,6 +152,24 @@
     }
 }
 
+@media screen and (max-width: 564px) {
+    .services{
+        h1{
+            font-size: 1.8em;
+            
+            b{
+                font-size: 2em;
+                line-height: 50px;
+            }
+        }
+
+        a{
+
+            width: 95%;
+        }
+    }
+}
+
 .project{
     display: grid;
     grid-template-columns: 1fr 1300px 1fr;
