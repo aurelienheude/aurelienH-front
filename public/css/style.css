@@ -664,6 +664,189 @@ html, body {
   color: #E95959 !important;
 }
 
+@media screen and (max-width: 564px) {
+  .project {
+    grid-template-columns: 90%;
+    justify-items: center;
+  }
+  .project .title {
+    grid-row: 1;
+    grid-column: 1;
+  }
+  .project .title h4, .project .title p {
+    color: #FDFDFD;
+  }
+  .project__left {
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    grid-column: 1;
+    grid-row: auto;
+  }
+  .project__left img {
+    position: inherit;
+    left: inherit;
+    width: 100%;
+    height: auto;
+  }
+  .project__left__description {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: column;
+    gap: 13px;
+    width: 100%;
+    position: inherit;
+    top: inherit;
+    right: inherit;
+  }
+  .project__left__description-type {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #E95959;
+  }
+  .project__left__description-name {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FDFDFD;
+  }
+  .project__left__description b {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #E95959;
+  }
+  .project__left__description p {
+    max-width: 490px;
+    padding: 30px 15px 30px 30px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: justify;
+    color: #FDFDFD;
+    background: #2e2e2e;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  .project__left__description__tech {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+  }
+  .project__left__description__tech span {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    color: #A9A9A9;
+  }
+  .project__left__description .link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    padding-top: 5px;
+    color: white;
+    transition: color 0.3s;
+  }
+  .project__left__description .link i {
+    color: white;
+    transition: color 0.3s;
+  }
+  .project__left__description .link i:hover {
+    color: #E95959 !important;
+  }
+  .project__right {
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    grid-column: 1;
+    grid-row: auto;
+  }
+  .project__right img {
+    position: inherit;
+    right: inherit;
+    width: 100%;
+    height: auto;
+  }
+  .project__right__description {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: column;
+    gap: 13px;
+    width: 100%;
+    position: inherit;
+    top: inherit;
+    left: inherit;
+  }
+  .project__right__description-type {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #E95959;
+  }
+  .project__right__description-name {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FDFDFD;
+  }
+  .project__right__description b {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #E95959;
+  }
+  .project__right__description p {
+    max-width: 490px;
+    padding: 30px 15px 30px 30px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: justify;
+    color: #FDFDFD;
+    background: #2e2e2e;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  .project__right__description__tech {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+  }
+  .project__right__description__tech span {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    color: #A9A9A9;
+  }
+  .project__right__description .link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    padding-top: 5px;
+    color: white;
+    transition: color 0.3s;
+  }
+  .project__right__description .link i {
+    color: white;
+    transition: color 0.3s;
+  }
+  .project__right__description .link i:hover {
+    color: #E95959 !important;
+  }
+}
 .tarifs {
   display: flex;
   align-items: center;
@@ -890,6 +1073,17 @@ html, body {
   color: #262626;
 }
 
+@media screen and (max-width: 564px) {
+  .tarifs__CardGrp {
+    width: 90%;
+  }
+  .tarifs__CardGrp__card {
+    width: 100%;
+  }
+  .tarifs__CardGrp__Darkcard {
+    width: 100%;
+  }
+}
 .contact {
   display: flex;
   align-items: center;
@@ -1006,6 +1200,15 @@ html, body {
 .contact__form__InputGrp button:hover {
   background: white;
   color: #262626;
+}
+
+@media screen and (max-width: 564px) {
+  .contact {
+    width: 100%;
+  }
+  .contact__form {
+    width: 90%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
